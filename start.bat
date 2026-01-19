@@ -1,0 +1,9 @@
+@echo off
+title Meta Ads Manager - Starting...
+echo Starting Meta Ads Manager Backend...
+start cmd /k ".venv\Scripts\python.exe app.py"
+timeout /t 3
+cd frontend
+echo Starting Frontend...
+npm start
+pause
